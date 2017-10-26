@@ -2,29 +2,38 @@ package reviewssite.reviewssite;
 
 public class Review {
 
-	private Long id;
-	private String title;
+	private int id;
+	private String dish;
 	private String imageUrl;
-	private String reviewCategory;
-	private String content;
-	private String description;
-	private String date;
-	private String tag;
+	private String cuisine;
+	private String review;
+	private String restaurant;
+	private int rating;
+	
+	public Review(int id, String dish, String imageUrl, String cuisine, String review, String restaurant, int rating) {
+		this.id=id;
+		this.dish=dish;
+		this.imageUrl=imageUrl;
+		this.cuisine=cuisine;
+		this.review=review;
+		this.restaurant=restaurant;
+		this.rating=rating;
+	}
 
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public String getTitle() {
-		return title;
+	public String getDish() {
+		return dish;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+	public void setDish(String dish) {
+		this.dish = dish;
 	}
 
 	public String getImageUrl() {
@@ -35,43 +44,35 @@ public class Review {
 		this.imageUrl = imageUrl;
 	}
 
-	public String getReviewCategory() {
-		return reviewCategory;
+	public String getReviewCuisine() {
+		return cuisine;
 	}
 
-	public void setReviewCategory(String reviewCategory) {
-		this.reviewCategory = reviewCategory;
+	public void setReviewCategory(String reviewCuisine) {
+		this.cuisine = reviewCuisine;
 	}
 
-	public String getContent() {
-		return content;
+	public String getReview() {
+		return review;
 	}
 
-	public void setContent(String content) {
-		this.content = content;
+	public void setReview(String review) {
+		this.review = review;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getRestaurant() {
+		return restaurant;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setDescription(String restaurant) {
+		this.restaurant = restaurant;
 	}
 
-	public String getDate() {
-		return date;
+	public int getRating() {
+		return rating;
 	}
 
-	public void setDate(String date) {
-		this.date = date;
-	}
-
-	public String getTag() {
-		return tag;
-	}
-
-	public void setTag(String tag) {
-		this.tag = tag;
+	public void setRating(int rating) {
+		this.rating = rating;
 	}
 }
