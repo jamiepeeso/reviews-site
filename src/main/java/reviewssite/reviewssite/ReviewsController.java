@@ -5,6 +5,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class ReviewsController {
@@ -13,17 +14,15 @@ public class ReviewsController {
 	private ReviewRepository reviews;
 	
 	@RequestMapping("/review")
-	public String findOne(Model model) {
-		model.addAttribute("modelReview", reviews.findOne(1));
+	public String findOne(@RequestParam("id") int id, Model model) {
+		model.addAttribute("modelReview", reviews.findOne(id));
 		return "review-template";
 	}
 
 
 	@RequestMapping("/allreviews")
 	public String showAll(Model model) {
-		model.addAttribute("modelReview", reviews.findAll());
-		//model.addAttribute("modelReviews", reviews);
-		
+		model.addAttribute("modelReviews", reviews.findAll());
 		return "reviews-template";
 	}
 

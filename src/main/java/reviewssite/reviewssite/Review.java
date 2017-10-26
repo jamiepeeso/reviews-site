@@ -44,12 +44,12 @@ public class Review {
 		this.imageUrl = imageUrl;
 	}
 
-	public String getReviewCuisine() {
+	public String getCuisine() {
 		return cuisine;
 	}
 
-	public void setReviewCategory(String reviewCuisine) {
-		this.cuisine = reviewCuisine;
+	public void setCuisine(String cuisine) {
+		this.cuisine = cuisine;
 	}
 
 	public String getReview() {

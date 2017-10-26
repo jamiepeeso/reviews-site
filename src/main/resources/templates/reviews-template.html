@@ -24,13 +24,15 @@
 	</nav>
 	<section class="American">
 		<h3>American</h3>
-		<!-- <p th:text="'Number of dishes:' + ${modelReviews.size()}" />
+		<p th:text="'Number of dishes:' + ${modelReviews.size()}" />
 		<li th:each="review: ${modelReviews}">
-		
-			<p th:text="${review.getDish()}" />
-		</li> -->
-	<p th:text="${modelReview}" />
-	
+			<p th:text="${review.restaurant}" />
+			<p th:text="${review.cuisine}" />
+			<p th:text="${review.dish}" />
+			<p th:text="${review.imageUrl}" />
+			<p th:text="${review.review}" />
+			<p th:text="${review.rating}" />
+		</li>
 	</section>
 </body>
 </html>
