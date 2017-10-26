@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Cheap Food</title>
+</head>
+<body>
+	<h1>Cheap Food</h1>
+	<h2>Reviews of food under $10</h2>
+	<nav class="categories">
+		<ul>
+			<li>American</li>
+			<p>From cheeseburgers to ranch dressing here you'll find the best
+				cheap American food in Columbus.</p>
+			<li>Asian</li>
+			<p>From potstickers to kebobs here you'll find the best cheap
+				Asian food in Columbus.</p>
+			<li>Italian</li>
+			<p>From pizza to spaghetti here you'll find the best cheap
+				Italian food in Columbus.</p>
+			<li>Mexican</li>
+			<p>From tacos to burritos here you'll find the best cheap Mexican
+				food in Columbus.</p>
+		</ul>
+	</nav>
+	<section class="American">
+		<h3>American</h3>
+		<!-- <p th:text="'Number of dishes:' + ${modelReviews.size()}" />
+		<li th:each="review: ${modelReviews}">
+		
+			<p th:text="${review.getDish()}" />
+		</li> -->
+	<p th:text="${modelReview}" />
+	
+	</section>
+</body>
+</html>
