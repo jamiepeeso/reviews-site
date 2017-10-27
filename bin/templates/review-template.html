@@ -1,24 +1,42 @@
 <!DOCTYPE html>
+
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
+
 <title>Cheap Food</title>
+
 <link href="../static/css/style.css" th:href="@{/css/style.css}"
 	rel="stylesheet" />
+
 </head>
+
 <body>
+
 	<div class="grid">
+	
 		<h1>
+
 			<p id="restaurant" th:text="${modelReview.restaurant}" />
+
 		</h1>
+
 		<section class="Reviews">
 
 			<p id="cuisine" th:text="${modelReview.cuisine}" />
+
 			<p id="dish" th:text="${modelReview.dish}" />
+
 			<img id="image" th:src="${modelReview.imageUrl}" />
+
 			<p id="review" th:text="${modelReview.review}" />
+
 			<p id="rating" th:text="${modelReview.rating}" />
 
 		</section>
+
 	</div>
+
 </body>
+
 </html>

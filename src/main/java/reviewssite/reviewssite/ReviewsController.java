@@ -12,13 +12,12 @@ public class ReviewsController {
 
 	@Resource
 	private ReviewRepository reviews;
-	
+
 	@RequestMapping("/review")
 	public String findOne(@RequestParam("id") int id, Model model) {
 		model.addAttribute("modelReview", reviews.findOne(id));
 		return "review-template";
 	}
-
 
 	@RequestMapping("/allreviews")
 	public String showAll(Model model) {
