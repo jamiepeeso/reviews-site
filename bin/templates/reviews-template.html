@@ -2,37 +2,27 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>Cheap Food</title>
+<link href="../static/css/style.css" th:href="@{/css/style.css}"
+	rel="stylesheet" />
 </head>
 <body>
-	<h1>Cheap Food</h1>
-	<h2>Reviews of food under $10</h2>
-	<nav class="categories">
-		<ul>
-			<li>American</li>
-			<p>From cheeseburgers to ranch dressing here you'll find the best
-				cheap American food in Columbus.</p>
-			<li>Asian</li>
-			<p>From potstickers to kebobs here you'll find the best cheap
-				Asian food in Columbus.</p>
-			<li>Italian</li>
-			<p>From pizza to spaghetti here you'll find the best cheap
-				Italian food in Columbus.</p>
-			<li>Mexican</li>
-			<p>From tacos to burritos here you'll find the best cheap Mexican
-				food in Columbus.</p>
-		</ul>
-	</nav>
-	<section class="American">
-		<h3>American</h3>
-		<p th:text="'Number of dishes:' + ${modelReviews.size()}" />
-		<li th:each="review: ${modelReviews}">
-			<p th:text="${review.restaurant}" />
-			<p th:text="${review.cuisine}" />
-			<p th:text="${review.dish}" />
-			<p th:text="${review.imageUrl}" />
-			<p th:text="${review.review}" />
-			<p th:text="${review.rating}" />
-		</li>
-	</section>
+	<div class="grid">
+		<header>
+			<h1>Best of Columbus: Cheap Food</h1>
+			<h2>Take a look below for ways to fill your belly without
+				emptying your coffers.</h2>
+		</header>
+
+		<section class="reviews">
+			<div class="individualreview" th:each="review: ${modelReviews}">
+				<p id="dish" th:text="${review.dish}" />
+				<p id="restaurant" th:text="${review.restaurant}" />
+				<p id="cuisine" th:text="${review.cuisine}" />
+				<p id="rating" th:text="${review.rating}" />
+				<img id="image" th:src="${review.imageUrl}" />
+				<p id="review" th:text="${review.review}" />
+			</div>
+		</section>
+	</div>
 </body>
 </html>
