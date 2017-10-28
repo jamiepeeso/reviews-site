@@ -2,7 +2,7 @@ package reviewssite.reviewssite;
 
 public class Review {
 
-	private int id;
+	private long id;
 	private String dish;
 	private String imageUrl;
 	private String cuisine;
@@ -10,7 +10,7 @@ public class Review {
 	private String restaurant;
 	private int rating;
 
-	public Review(int id, String dish, String imageUrl, String cuisine, String review, String restaurant, int rating) {
+	public Review(long id, String dish, String imageUrl, String cuisine, String review, String restaurant, int rating) {
 		this.id = id;
 		this.dish = dish;
 		this.imageUrl = imageUrl;
@@ -20,7 +20,7 @@ public class Review {
 		this.rating = rating;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
