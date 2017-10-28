@@ -28,8 +28,8 @@
 
 			<div class="individualreview" th:each="review: ${modelReviews}">
 
-				<p id="dish" th:text="${review.dish}" />
-
+				<a th:href="@{'/review?id=' + ${review.id}}"><p id="dish" th:text="${review.dish}" /></a>
+				
 				<p id="restaurant" th:text="${review.restaurant}" />
 
 				<p id="cuisine" th:text="${review.cuisine}" />
