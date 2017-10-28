@@ -34,6 +34,12 @@
 
 				<p id="cuisine" th:text="${review.cuisine}" />
 
+				<!-- <div th:switch="${review.cuisine}">
+					<img th:case="'Asian'" th:src="images/chopsticks.jpg" alt="Asian" />
+					<img th:case="'American'" th:src="images/fork-and-knife.jpg"
+						alt="American" />
+				</div> -->
+
 				<p id="rating" th:text="${review.rating}" />
 
 				<img id="image" th:src="${review.imageUrl}" />

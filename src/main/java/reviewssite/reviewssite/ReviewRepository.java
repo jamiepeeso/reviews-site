@@ -25,10 +25,10 @@ public class ReviewRepository {
 				"Dirty Frank\'s", 4);
 		reviews.put(1, dirtyFranks);
 		Review fortune = new Review(2, "Pad Thai Lunch Special ($6.95)", "images/padthai.jpg", "Asian",
-				"First time to Fortune today and I was amazed with how good it was..I guess a few people in my office have known about this place for years! The shrimp egg roll was the best I ever had! I also got a Szechuan chicken that had jalapeño as one of the veggies! It was beyond good!! The chicken was diced and a good portion! I'm looking forward to going back but am a little worried because the kroger in the same strip is closing because of something else coming in and I'm not sure if the whole strip is getting torn down or just kroger?",
+				"This place has the best lunch special in town.  Pay only $6.95 for an entree, eggroll, bowl of soup, and a drink for lunch.  This deal is one of the few that is valid 7 days a week!  Of course, the more authentic (and tastier) dishes are on the dinner menu for a few more dollars, but this is a definite go-to!  The Pad Thai comes with chicken, shrimp, or beef.  The chef makes his own chili sauce--definitely worth a try if you are a fan of spicy food.",
 				"Fortune", 5);
 		reviews.put(2, fortune);
-		Review spaghettiWarehouse = new Review(3, "15 Layer Lasagna ($8.69)", "images/lasagna.jpg", "Italian",
+		Review spaghettiWarehouse = new Review(3, "15 Layer Lasagna ($8.69)", "images/lasagna.jpg", "American",
 				"I have been going to Spaghetti Warehouse for a few years now, but this past weekend made me realize I most likely wont go back.  The food was just okay but the service was really bad.  I went in on a Saturday night and the place was not super packed.  We were seated quickly and the waitress was just not too attentive to our table.  It seems as if we did something wrong to her to make her not want to stop.",
 				"Spaghetti Warehouse", 5);
 		reviews.put(3, spaghettiWarehouse);
@@ -37,7 +37,7 @@ public class ReviewRepository {
 				"Beechwold Diner", 5);
 		reviews.put(4, beechwoldBurger);
 		Review carvery = new Review(5, "Bacon & Chicken Panini ($7.49)", "images/sandwich.jpg", "American",
-				"I was kind of excited to try this place, because I LOVE sandwiches. But, I was kind of disappointed with the product. The sandwich (butcher block club) was smallish, the prices were high-ish, and the side that I had (some sort of coleslaw that was slathered with mayo) was just tolerable. I think I prefer the tastier, larger, and friendlier-on-the-wallet sandwiches at Si Senor. I won't turn down an invitation to go here if a friend suggests, but certainly won't choose to go here.",
+				"You gotta go in for the full experience.  You walk in and the smell of everything delicious just hits you in the face and makes your mouth water.  I enjoyed every bite of the sandwich, and my side was the Pork Fat Roasted Potatoes (Yukon gold potatoes  and roasted directly under the Porchetta). The potatoes had a spicy kick in my mouth.",
 				"Carvery", 4);
 		reviews.put(5, carvery);
 		Review dkDiner = new Review(6, "Grilled Cheese BS ($6.00)", "images/bsandwich.jpg", "American",
