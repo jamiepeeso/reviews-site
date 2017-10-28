@@ -28,23 +28,13 @@
 
 			<div class="individualreview" th:each="review: ${modelReviews}">
 
-				<a th:href="@{'/review?id=' + ${review.id}}"><p id="dish" th:text="${review.dish}" /></a>
-				
-				<p id="restaurant" th:text="${review.restaurant}" />
+				<a th:href="@{'/review?id=' + ${review.id}}"><p id="dish"
+						th:text="${review.dish}" /></a>
 
-				<p id="cuisine" th:text="${review.cuisine}" />
-
-				<!-- <div th:switch="${review.cuisine}">
-					<img th:case="'Asian'" th:src="images/chopsticks.jpg" alt="Asian" />
-					<img th:case="'American'" th:src="images/fork-and-knife.jpg"
-						alt="American" />
-				</div> -->
-
-				<p id="rating" th:text="${review.rating}" />
 
 				<img id="image" th:src="${review.imageUrl}" />
 
-				<p id="review" th:text="${review.review}" />
+
 
 			</div>
 
